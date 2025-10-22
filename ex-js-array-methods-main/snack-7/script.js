@@ -20,4 +20,24 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
+
+// Metodo for
+console.log('Metodo for')
+
+for (let i = 0; i < students.length; i++) {
+  const thisStudent = students[i]
+
+  if (thisStudent.id === 2) {
+    console.log(thisStudent)
+    i = students.length
+  }
+}
+
+// Metodo find
+console.log('Metodo find')
+
+const findStudent = students.find((thisStudent) => thisStudent.id === 2)
+
+console.log(findStudent)
+
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
