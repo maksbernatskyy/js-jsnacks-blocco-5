@@ -11,24 +11,22 @@ const posts = [
 console.log('Metodo for')
 
 const namesAuthors = []
+console.log(namesAuthors)
 
 for (let i = 0; i < posts.length; i++) {
   const thisPost = posts[i]
   namesAuthors.push(thisPost.author)
 }
 
-console.log(namesAuthors)
-
 // Metodo forEach
 console.log('Metodo forEach')
 
 const namesForEachAuthors = []
+console.log(namesForEachAuthors)
 
 posts.forEach((thisPost) => {
   namesForEachAuthors.push(thisPost.author)
 })
-
-console.log(namesForEachAuthors)
 
 // Metodo map
 console.log('Metodo map')

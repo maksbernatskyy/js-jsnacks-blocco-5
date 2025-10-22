@@ -6,6 +6,7 @@ const nums = [2, 8, 4, 7, 12, 87];
 console.log('Metodo for')
 
 const evenNums = []
+console.log(evenNums)
 
 for (let i = 0; i < nums.length; i++) {
     const thisNumber = nums[i]
@@ -15,20 +16,17 @@ for (let i = 0; i < nums.length; i++) {
     }
 }
 
-console.log(evenNums)
-
 // Metodo forEach
 console.log('Metodo forEach')
 
 const evenForEachNums = []
+console.log(evenForEachNums)
 
 nums.forEach((thisNumber) => {
     if (thisNumber % 2 === 0) {
         evenForEachNums.push(thisNumber)
     }
 })
-
-console.log(evenForEachNums)
 
 // Metodo filter
 console.log('Metodo filter')
