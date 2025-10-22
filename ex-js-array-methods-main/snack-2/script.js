@@ -9,12 +9,16 @@ console.log(people)
 // Stampa in console tutti i nomi
 
 // Metodo for
+console.log('Metodo for')
+
 for (let i = 0; i < people.length; i++){
   const thisPerson = people[i]
   console.log(thisPerson.name)
 }
 
 // Metodo forEach
+console.log('Metodo forEach')
+
 people.forEach((thisPerson) => {
   console.log(thisPerson.name)
 })
