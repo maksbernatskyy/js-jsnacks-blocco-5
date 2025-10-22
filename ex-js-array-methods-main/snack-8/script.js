@@ -20,4 +20,26 @@ const students = [
 ];
 
 // Recupera la classe dello studente 'Marco Lanci'
+
+// Metodo for
+console.log('Metodo for')
+
+for (let i = 0; i < students.length; i++) {
+  const thisStudent = students[i]
+
+  if (thisStudent.name === 'Marco Lanci') {
+    console.log(thisStudent.class)
+    i = students.length
+  }
+}
+
+// Metodo find
+console.log(' Metodo find')
+
+const findClass = students.find((thisStudent) => {
+  if (thisStudent.name === 'Marco Lanci') {
+    return console.log(thisStudent.class)
+  }
+})
+
 // Risultato: '3C'
