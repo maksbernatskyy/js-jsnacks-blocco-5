@@ -6,4 +6,37 @@ const posts = [
 ]
 
 // Crea un nuovo array coi nomi di tutti gli autori
+
+// Metodo for
+console.log('Metodo for')
+
+const namesAuthors = []
+
+for (let i = 0; i < posts.length; i++) {
+  const thisPost = posts[i]
+  namesAuthors.push(thisPost.author)
+}
+
+console.log(namesAuthors)
+
+// Metodo forEach
+console.log('Metodo forEach')
+
+const namesForEachAuthors = []
+
+posts.forEach((thisPost) => {
+  namesForEachAuthors.push(thisPost.author)
+})
+
+console.log(namesForEachAuthors)
+
+// Metodo map
+console.log('Metodo map')
+
+const namesMapAuthors = posts.map((thisPost) => {
+  return thisPost.author
+})
+
+console.log(namesMapAuthors)
+
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
